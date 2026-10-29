@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="PRODUCTGRIDFILTER.CSS">
+</head>
+</head>
+<body>
+    <input type="text" id="pSearch" placeholder="Search product..." oninput="filterGrid()" />
+
+<div class="categories" onchange="filterGrid()">
+  <label><input type="radio" name="pCat" value="all" checked> All</label>
+  <label><input type="radio" name="pCat" value="tech"> Tech</label>
+  <label><input type="radio" name="pCat" value="book"> Books</label>
+</div>
+
+<div class="grid">
+  <div class="pCard" data-cat="tech">Laptop</div>
+  <div class="pCard" data-cat="book">JS Handbook</div>
+</div>
+    <script src="PRODUCTGRIDFILTER.JS"></script>
+</body>
+</html>

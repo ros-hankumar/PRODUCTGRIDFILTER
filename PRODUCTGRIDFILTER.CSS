@@ -1,0 +1,10 @@
+.grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 8px; margin-top: 12px; 
+}
+.pCard { 
+    background: #88a8e9; 
+    padding: 12px; 
+    border-radius: 4px; 
+}
